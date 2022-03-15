@@ -18,10 +18,10 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python {{ python }}
   run:
-    - python
-    - requests
+    - python {{ python }}
+    - requests {{requests }}
 
 test:
   imports:
@@ -35,7 +35,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - mxr-conda
-    - rluria14
-    - ndmaxar
-    - oblute
+    - open-ce/open-ce-dev-team
