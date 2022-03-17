@@ -20,7 +20,7 @@ requirements:
     - pip
     - python {{ python }}
   run:
-    - python {{ python }}
+    - python
     - requests {{requests }}
 
 test:
